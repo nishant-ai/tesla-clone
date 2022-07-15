@@ -14,7 +14,7 @@ function Header() {
   return (
     <Container>
       <a href="https://www.tesla.com">
-        <img src='/images/logo.svg'></img>
+        <img src='/images/logo.svg' alt='TESLA' />
       </a>
       <Menu>
         {cars && cars.map((car, index) => 
@@ -37,7 +37,7 @@ function Header() {
         <li><a href="https://www.tesla.com">Cybertruck</a></li>
         <li><a href="https://www.tesla.com">Roadster</a></li>
         {cars && cars.map((car, index) => 
-          <li><a key={index} href="#">{car}</a></li>
+          <li><a key={index} href="https://www.tesla.com">{car}</a></li>
         )}
       </BurgerNav>
     </Container>
