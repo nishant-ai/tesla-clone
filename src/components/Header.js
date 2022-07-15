@@ -13,29 +13,29 @@ function Header() {
 
   return (
     <Container>
-      <a>
+      <a href="https://www.tesla.com">
         <img src='/images/logo.svg'></img>
       </a>
       <Menu>
         {cars && cars.map((car, index) => 
-          <a key={index} href="#">{car}</a>
+          <a href="https://www.tesla.com" key={index}>{car}</a>
         )}
 
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="https://www.tesla.com">Shop</a>
+        <a href="https://www.tesla.com">Tesla Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show = {burgerStatus}>
         <CloseWrapper>
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
-        <li><a href="#">Existing Inventory</a></li>
-        <li><a href="#">Used Inventory</a></li>
-        <li><a href="#">Trade-in</a></li>
-        <li><a href="#">Cybertruck</a></li>
-        <li><a href="#">Roadster</a></li>
+        <li><a href="https://www.tesla.com">Existing Inventory</a></li>
+        <li><a href="https://www.tesla.com">Used Inventory</a></li>
+        <li><a href="https://www.tesla.com">Trade-in</a></li>
+        <li><a href="https://www.tesla.com">Cybertruck</a></li>
+        <li><a href="https://www.tesla.com">Roadster</a></li>
         {cars && cars.map((car, index) => 
           <li><a key={index} href="#">{car}</a></li>
         )}
